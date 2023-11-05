@@ -5,3 +5,6 @@ export { default as not } from "./functions/not";
 export { default as compose } from "./functions/compose";
 export { default as pipe } from "./functions/pipe";
 export { default as reverse } from "./functions/reverse";
+export { default as tranduce } from "./functions/transduce";
+export { default as filterTransducer } from "./functions/filterTransducer";
+export { default as mapTransducer } from "./functions/mapTransducer";
