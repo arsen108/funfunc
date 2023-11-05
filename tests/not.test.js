@@ -1,4 +1,4 @@
-var F = require("../src/index");
+import * as F from "../src";
 
 describe("not", () => {
     test("negates the function passed to it", () => {

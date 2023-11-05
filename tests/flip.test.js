@@ -1,4 +1,4 @@
-var F = require("../src/index");
+import * as F from "../src";
 
 describe("flip", () => {
     test("flips the arguments of the divide function", () => {

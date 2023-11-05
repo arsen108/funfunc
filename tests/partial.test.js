@@ -1,4 +1,4 @@
-var F = require("../src/index");
+import * as F from "../src";
 
 describe("partial", () => {
     test("adds arguments partially firsly 1 then 2 to be equal 3", () => {
