@@ -4,3 +4,4 @@ export { default as flip } from "./functions/flip";
 export { default as not } from "./functions/not";
 export { default as compose } from "./functions/compose";
 export { default as pipe } from "./functions/pipe";
+export { default as reverse } from "./functions/reverse";

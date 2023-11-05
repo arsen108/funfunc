@@ -1,4 +1,5 @@
 import compose from "./compose";
+import reverse from "./reverse";
 
 /**
  * Creates a function that is the composition of the provided functions, where each function
@@ -10,6 +11,6 @@ import compose from "./compose";
  * @returns {Function} A function obtained by piping the input functions from left to right.
  */
 function pipe(...fns) {
-    return compose(...fns.reverse());
+    return compose(...reverse(fns));
 }
 export default pipe;
