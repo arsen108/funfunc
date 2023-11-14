@@ -5,15 +5,15 @@
  * @param {Function} fn - The function to flip arguments for.
  * @returns {Function} A new function with the first two arguments of the input function flipped.
  */
-function flip(fn) {
-    return function (...args) {
-        if (args.length < 2) {
-            throw new Error(
-                "flip function requires at least two arguments to be passed to the flipped function."
-            );
-        }
+function flip (fn) {
+  return function (...args) {
+    if (args.length < 2) {
+      throw new Error(
+        'flip function requires at least two arguments to be passed to the flipped function.'
+      )
+    }
 
-        return fn(args[1], args[0], ...args.slice(2));
-    };
+    return fn(args[1], args[0], ...args.slice(2))
+  }
 }
-export default flip;
+export default flip

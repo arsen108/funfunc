@@ -1,11 +1,11 @@
-import * as F from "../src";
+import * as F from '../src'
 
-describe("reverse", () => {
-    test("should reverse the provided array", () => {
-        const arr = [1, 2, 3];
+describe('reverse', () => {
+  test('should reverse the provided array', () => {
+    const arr = [1, 2, 3]
 
-        const result = F.reverse(arr);
+    const result = F.reverse(arr)
 
-        expect(result).toStrictEqual([3, 2, 1]);
-    });
-});
+    expect(result).toStrictEqual([3, 2, 1])
+  })
+})

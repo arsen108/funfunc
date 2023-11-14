@@ -3,7 +3,7 @@
  * @param {Array} arr - The array to be reversed.
  * @returns {Array} A new array containing the elements of the original array in reverse order.
  */
-function reverse(arr) {
-    return arr.slice().reverse();
+function reverse (arr) {
+  return arr.slice().reverse()
 }
-export default reverse;
+export default reverse

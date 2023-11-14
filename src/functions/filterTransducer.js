@@ -5,15 +5,15 @@
  * @returns {Function} A transducer function that takes a reducer and returns a new reducer
  *                     that includes values only if they satisfy the predicate function.
  */
-function filterTransducer(filterFn) {
-    return function (reducer) {
-        return function (accumulator, value) {
-            if (filterFn(value)) {
-                return reducer(accumulator, value);
-            } else {
-                return accumulator;
-            }
-        };
-    };
+function filterTransducer (filterFn) {
+  return function (reducer) {
+    return function (accumulator, value) {
+      if (filterFn(value)) {
+        return reducer(accumulator, value)
+      } else {
+        return accumulator
+      }
+    }
+  }
 }
-export default filterTransducer;
+export default filterTransducer

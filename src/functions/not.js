@@ -6,9 +6,9 @@
  * @returns {Function} A new function that, when called with any number of arguments, will return the negation
  *                     of the original predicate function's result.
  */
-function not(fn) {
-    return function (...args) {
-        return !fn(...args);
-    };
+function not (fn) {
+  return function (...args) {
+    return !fn(...args)
+  }
 }
-export default not;
+export default not

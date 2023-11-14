@@ -6,8 +6,8 @@
  * @param {Array} collection - The array to transduce over.
  * @returns {*} The final, accumulated value.
  */
-function transduce(transducer, reducer, init, collection) {
-    const transformedReducer = transducer(reducer);
-    return collection.reduce(transformedReducer, init);
+function transduce (transducer, reducer, init, collection) {
+  const transformedReducer = transducer(reducer)
+  return collection.reduce(transformedReducer, init)
 }
-export default transduce;
+export default transduce

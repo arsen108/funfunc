@@ -1,11 +1,11 @@
-import * as F from "../src";
+import * as F from '../src'
 
-describe("flip", () => {
-    test("flips the arguments of the divide function", () => {
-        let divide = (a, b) => a / b;
-        expect(divide(10, 5)).toBe(2);
+describe('flip', () => {
+  test('flips the arguments of the divide function', () => {
+    const divide = (a, b) => a / b
+    expect(divide(10, 5)).toBe(2)
 
-        let flippedDivide = F.flip(divide);
-        expect(flippedDivide(10, 5)).toBe(0.5);
-    });
-});
+    const flippedDivide = F.flip(divide)
+    expect(flippedDivide(10, 5)).toBe(0.5)
+  })
+})
