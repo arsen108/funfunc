@@ -1,6 +1,6 @@
 {
     "name": "funfunc",
-    "version": "0.0.0",
+    "version": "0.1.2",
     "description": "A modest yet brave functional library for JavaScript.",
     "scripts": {
         "lint": "npx eslint . --ext .js --fix",
