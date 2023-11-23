@@ -1,6 +1,6 @@
 {
     "name": "funfunc",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "description": "A modest yet brave functional library for JavaScript.",
     "scripts": {
         "lint": "npx eslint . --ext .js --fix",
@@ -31,7 +31,6 @@
     "main": "dist/funfunc.cjs.js",
     "module": "dist/funfunc.esm.js",
     "files": [
-        "dist",
-        "assets"
+        "dist"
     ]
 }
