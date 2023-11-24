@@ -9,13 +9,13 @@
  *                     The rightmost function can take multiple arguments, as it provides
  *                     the signature for the resulting composed function.
  */
-function compose (...fns) {
-  return function (...args) {
-    return fns.reduceRight(
-      (result, fn, index) =>
-        index === fns.length - 1 ? fn(...result) : fn(result),
-      args
-    )
-  }
+function compose(...fns) {
+    if (!fns.every((fn) => typeof fn === "function")) {
+        throw new TypeError("compose only accepts functions as arguments");
+    }
+
+    return function (...args) {
+        return fns.reduceRight((result, fn, index) => (index === fns.length - 1 ? fn(...result) : fn(result)), args);
+    };
 }
-export default compose
+export default compose;

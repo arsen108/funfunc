@@ -4,17 +4,21 @@
  * @param {Function} fn - The function to be curried.
  * @returns {Function} - The curried version of the original function.
  */
-function curry (fn) {
-  const arity = fn.length
-
-  return function curriedFunction (...args) {
-    if (args.length >= arity) {
-      return fn(...args)
+function curry(fn) {
+    if (typeof fn !== "function") {
+        throw new TypeError("curry expects a function as an argument");
     }
 
-    return function (...nextArgs) {
-      return curriedFunction(...args, ...nextArgs)
-    }
-  }
+    const arity = fn.length;
+
+    return function curriedFunction(...args) {
+        if (args.length >= arity) {
+            return fn(...args);
+        }
+
+        return function (...nextArgs) {
+            return curriedFunction(...args, ...nextArgs);
+        };
+    };
 }
-export default curry
+export default curry;

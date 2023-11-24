@@ -1,5 +1,5 @@
-import compose from './compose'
-import reverse from './reverse'
+import compose from "./compose";
+import reverse from "./reverse";
 
 /**
  * Creates a function that is the composition of the provided functions, where each function
@@ -10,7 +10,10 @@ import reverse from './reverse'
  * @param {...Function} fns - A series of functions to pipe.
  * @returns {Function} A function obtained by piping the input functions from left to right.
  */
-function pipe (...fns) {
-  return compose(...reverse(fns))
+function pipe(...fns) {
+    if (!fns.every((fn) => typeof fn === "function")) {
+        throw new TypeError("pipe expects all arguments to be functions");
+    }
+    return compose(...reverse(fns));
 }
-export default pipe
+export default pipe;
