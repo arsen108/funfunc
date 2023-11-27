@@ -1,6 +1,6 @@
 {
     "name": "funfunc",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "description": "A modest yet brave functional library for JavaScript.",
     "scripts": {
         "lint": "npx eslint . --ext .js --fix",
@@ -10,6 +10,11 @@
     },
     "author": "Arsen Astsatryan",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arsen108/funfunc"
+    },
+    "homepage": "https://funfunc.io",
     "devDependencies": {
         "@babel/cli": "^7.23.0",
         "@babel/core": "^7.23.2",

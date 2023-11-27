@@ -1,4 +1,4 @@
-<img src="./assets/logo.png" alt="Alt text" width="150" height="150" />
+<img src="https://www.funfunc.io/assets/logo.png" alt="Alt text" width="150" height="150" />
 
 # FunFunc - A Functional JavaScript Library
 
